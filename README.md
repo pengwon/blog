@@ -1,1 +1,1 @@
-# My Blog
+# [boringhex blog](https://blog.boringhex.top)
