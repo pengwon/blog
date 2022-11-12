@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
+title: boringhex.top博客
+subtitle: '非典型程序员的小破站'
+description: '分享电子、嵌入式和计算机技术'
+keywords: 开发, 设计, 计算机, 电子, 信息, 嵌入式, 系统, 技术, 软件, 硬件, 物联网, MCU, PCB, 单片机, 电路, 编程
 author: boringhex.top
 language: zh-CN
 timezone: ''
@@ -14,7 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://blog.boringhex.top
-permalink: :year/:month/:day/:title/
+permalink: posts/:hash/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -69,6 +69,9 @@ index_generator:
 default_category: uncategorized
 category_map:
 tag_map:
+tag_generator:
+  enable_index_page: false
+
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -98,6 +101,21 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+
+## Plugin: hexo-generator-feed
+feed:
+  enable: true  # Enables or disables this plugin. Enabled by default.
+  # type: atom  # Feed type. atom or rss2. Specify ['atom', 'rss2'] to output both types. (Default: atom)
+  # path: atom.xml # Feed path. When both types are specified, path must follow the order of type value. (Default: atom.xml/rss2.xml)
+  # limit: 20 # Maximum number of posts in the feed (Use 0 or false to show all posts)
+  # hub:  # URL of the PubSubHubbub hubs (Leave it empty if you don't use it)
+  # content: true # (optional) set to 'true' to include the contents of the entire post in the feed.
+  # content_limit: 140  # (optional) Default length of post content used in summary. Only used, if content setting is false and no custom post description present.
+  # content_limit_delim: ' '  # (optional) If content_limit is used to shorten post contents, only cut at the last occurrence of this delimiter before reaching the character limit. Not used by default.
+  # order_by: -date # Feed order-by. (Default: -date)
+  # icon: icon.png  # (optional) Custom feed icon. Defaults to a gravatar of email specified in the main config.
+  # autodiscovery: true # Add feed autodiscovery. (Default: true)
+  # template: # Custom template path(s). This file will be used to generate feed xml file, see the default templates: atom.xml and rss2.xml.
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

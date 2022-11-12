@@ -1,0 +1,9 @@
+{
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "aiXcoder.showTrayIcon": true,
+    "pasteImage.namePrefix": "${currentFileNameWithoutExt}_",
+    "pasteImage.path": "${projectRoot}/source/images",
+    "pasteImage.basePath": "${projectRoot}/source",
+    "pasteImage.forceUnixStyleSeparator": true,
+    "pasteImage.prefix": "/"
+}
