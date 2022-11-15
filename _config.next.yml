@@ -154,8 +154,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/yourname || fab fa-github
-  E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  GitHub: https://github.com/boringhex-top || fab fa-github
+  E-Mail: mailto:boringhex_top@163.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -301,7 +301,7 @@ related_posts:
 post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source
-  url: https://github.com/pengwon/blog/edit/main/source/ # Link for fork & edit
+  url: https://github.com/boringhex-top/blog.boringhex.top/edit/main/source/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false
@@ -410,7 +410,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/boringhex-top
   title: Follow me on GitHub
 
 
@@ -656,12 +656,14 @@ isso: # <data_isso>
 # For more infomation: https://giscus.app/
 giscus:
   enable: true
-  repo: pengwon/blog  # Github repository name
+  repo: boringhex-top/blog.boringhex.top  # Github repository name
   repo_id: R_kgDOITYUGw # Github repository id
   category: Announcements # Github discussion category
   category_id: DIC_kwDOITYUG84CSNKF # Github discussion category id
   # Available values: pathname | url | title | og:title
-  mapping: pathname
+  mapping: title
+  # 是否使用严格的标题匹配，Available values: 0 | 1
+  strict: 1
   # Available values: 0 | 1 
   reactions_enabled: 1
    # Available values: 0 | 1 
