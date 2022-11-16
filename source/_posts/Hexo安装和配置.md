@@ -3,6 +3,7 @@ title: Hexo安装和配置
 tags:
   - hexo
   - scoop
+  - powershell
 date: 2022-11-15 11:25:54
 ---
 

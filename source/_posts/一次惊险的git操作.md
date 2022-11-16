@@ -3,6 +3,7 @@ title: 一次惊险的git操作
 date: 2022-11-15 14:03:34
 tags:
     - git
+    - powershell
 ---
 
 前两天写完一篇文章，但是还没有发布，因为一直在调试hexo和next-theme的配置。然后就发生了一件很悲催的事情，执行了`git add .`，正准备`git commit`时，发现有很多文件不想加到git仓库，也就是在工作区执行了add，但是还没有commit，此时脑袋一热，执行了`git reset --hard HEAD`，然后就悲剧了，工作区的修改全没了。
