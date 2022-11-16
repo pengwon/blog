@@ -187,7 +187,7 @@ CodePage          : 936
 对，问题就出在这，应该跟安装powershell时系统语言有关系。要解决这个问题，建议还是不要修改默认配置，只修改当前控制台的变量就好（只在当前终端生效）。
 
 ``` powershell
-❯ [console]::inputencoding = [console]::outputencoding = [System.Text.UTF8Encoding]::new()
+❯ [console]::inputencoding = [console]::outputencoding = [System.Text.Encoding]::UTF8
 ❯ [console]::inputencoding;[console]::outputencoding
 
 Preamble          :
