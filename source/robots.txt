@@ -1,0 +1,5 @@
+# robots.txt
+
+Sitemap: https://blog.boringhex.top/sitemap.xml
+User-agent: *
+Disallow:
