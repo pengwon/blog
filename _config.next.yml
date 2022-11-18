@@ -276,8 +276,8 @@ reward_settings:
   # comment: Buy me a coffee
 
 reward:
-  wechatpay: /images/wechatpay.png
-  alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.jpg
+  alipay: /images/alipay.jpg
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -286,7 +286,7 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
-  WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  WeChat: /images/qrcode_for_gh_412c7e901547_50cm.jpg || fab fa-weixin
   RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
@@ -720,7 +720,7 @@ growingio_analytics: # <project_id>
 
 # Cloudflare Web Analytics
 # See: https://www.cloudflare.com/web-analytics/
-cloudflare_analytics:
+cloudflare_analytics: ef645add1ae94f90b91aeb4c7fe797ba
 
 # Microsoft Clarity Analytics
 # See: https://clarity.microsoft.com/

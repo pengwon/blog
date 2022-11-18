@@ -117,6 +117,38 @@ feed:
   # autodiscovery: true # Add feed autodiscovery. (Default: true)
   # template: # Custom template path(s). This file will be used to generate feed xml file, see the default templates: atom.xml and rss2.xml.
 
+## Plugin: hexo-optimize
+filter_optimize:
+  # This plugin can be disabled by NODE_ENV in development to boost hexo generate: `export NODE_ENV=development`
+  enable: true
+  # static resource versioning
+  versioning: false
+  css:
+    # minify all css files
+    minify: true
+    excludes:
+    # use preload to load css elements dynamically
+    delivery:
+      - '@fortawesome/fontawesome-free'
+      - 'fonts.googleapis.com'
+    # make specific css content inline into the html page
+    inlines:
+      # support full path only
+      - css/main.css
+  js:
+    # minify all js files
+    minify: true
+    excludes:
+    # remove the comments in each of the js files
+    remove_comments: false
+  html:
+    # minify all html files
+    minify: true
+    excludes:
+  # set the priority of this plugin,
+  # lower means it will be executed first, default of Hexo is 10
+  priority: 12
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
