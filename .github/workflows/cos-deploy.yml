@@ -23,6 +23,13 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
 
+    # Hexo generate
+    - name: Hexo generate
+      id: generate
+      run: |
+        npx hexo clean
+        npx hexo generate
+
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
@@ -32,8 +39,8 @@ jobs:
         secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
         cos_bucket: ${{ secrets.COS_BUCKET }}
         cos_region: ${{ secrets.COS_REGION }}
-        local_path: build
-        remote_path: docroot/static
+        local_path: public
+        remote_path: /
         clean: true
     
     # Use the output from the `deploy` step(use for test action)
