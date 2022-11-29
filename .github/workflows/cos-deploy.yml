@@ -41,7 +41,11 @@ jobs:
         cos_region: ${{ secrets.COS_REGION }}
         local_path: public
         remote_path: /
-        clean: true
+        # Optional Set to true for cleaning files on COS path which are not existed in local path. Default is false.
+        # clean: true
+        # Optional Set to true for using accelerate domain to upload files. Default is false.
+        # accelerate: true
+
     
     # Use the output from the `deploy` step(use for test action)
     - name: Get the output
