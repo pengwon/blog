@@ -2,16 +2,17 @@ on:
   push:
     branches:
       - main
-  
-  pull_request:
-    branches:
-      - main
-    types:
-      - closed
+  # PR触发时将push事件注释掉
+  # pull_request:
+  #   branches:
+  #     - main
+  #   types:
+  #     - closed
 
 jobs:
   build:
-    if: (github.event_name == 'push') || (github.event.pull_request.merged)
+    # PR触发工作流时需要检查merged
+    # if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     name: A job to deploy blog.
     steps:
