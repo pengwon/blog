@@ -1,7 +1,17 @@
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
 
 jobs:
   build:
+    if: github.event.pull_request.merged != false
     runs-on: ubuntu-latest
     name: A job to deploy blog.
     steps:
