@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    if: github.event.pull_request.merged != false
+    if: (github.event.push.ref) || (github.event.pull_request.merged == true)
     runs-on: ubuntu-latest
     name: A job to deploy blog.
     steps:
