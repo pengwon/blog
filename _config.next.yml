@@ -230,7 +230,7 @@ footer:
     # The full num of gongan beian.
     gongan_num: 京公网安备 11011102002253号
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
-    gongan_icon_url: /images/备案图标.png
+    gongan_icon_url: https://imgs.boringhex.top/blog/备案图标.png
 
 
 # ---------------------------------------------------------------
@@ -276,8 +276,8 @@ reward_settings:
   # comment: Buy me a coffee
 
 reward:
-  wechatpay: /images/wechatpay.webp
-  alipay: /images/alipay.webp
+  wechatpay: https://imgs.boringhex.top/blog/wechatpay.webp
+  alipay: https://imgs.boringhex.top/blog/alipay.webp
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -286,7 +286,7 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
-  WeChat: /images/qrcode_for_gh_412c7e901547_50cm.jpg || fab fa-weixin
+  WeChat: https://imgs.boringhex.top/blog/qrcode_for_gh_412c7e901547_50cm.jpg || fab fa-weixin
   RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
