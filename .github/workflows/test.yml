@@ -35,6 +35,10 @@ jobs:
         key: ${{ runner.os }}-public-${{ hashFiles('public') }}
         restore-keys: |
           ${{ runner.os }}-public-
+          
+    # display public
+    - name: diplay public
+      run: ls public -R
     
     # Hexo generate
     - name: Hexo generate
@@ -51,20 +55,20 @@ jobs:
         path: public
 
     # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      uses: TencentCloud/cos-action@v1
-      with:
-        secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
-        secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
-        cos_bucket: ${{ secrets.COS_TESTBUCKET }}
-        cos_region: ${{ secrets.COS_REGION }}
-        local_path: public
-        remote_path: /
-        # Optional Set to true for cleaning files on COS path which are not existed in local path. Default is false.
-        # clean: true
-        # Optional Set to true for using accelerate domain to upload files. Default is false.
-        # accelerate: true
+#     - name: Deploy
+#       id: deploy
+#       uses: TencentCloud/cos-action@v1
+#       with:
+#         secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
+#         secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+#         cos_bucket: ${{ secrets.COS_TESTBUCKET }}
+#         cos_region: ${{ secrets.COS_REGION }}
+#         local_path: public
+#         remote_path: /
+#         # Optional Set to true for cleaning files on COS path which are not existed in local path. Default is false.
+#         # clean: true
+#         # Optional Set to true for using accelerate domain to upload files. Default is false.
+#         # accelerate: true
 
     
     # Use the output from the `deploy` step(use for test action)
