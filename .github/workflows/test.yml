@@ -26,17 +26,16 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
 
-    # download public
-    - name: download public
-      id: download
-      uses: actions/download-artifact@v3
+    # cache public
+    - name: cache public
+      id: cache-public
+      uses: actions/cache@v3
       with:
-        name: public
         path: public
+        key: ${{ runner.os }}-public-${{ hashFiles('public') }}
+        restore-keys: |
+          ${{ runner.os }}-public-
     
-    - name: Display structure
-      run: ls -R
-      
     # Hexo generate
     - name: Hexo generate
       id: generate
