@@ -31,15 +31,13 @@ jobs:
       id: cache-public
       uses: actions/cache@v3
       with:
-        path: public
-        key: ${{ runner.os }}-public-${{ hashFiles('public') }}
+        path: |
+          public
+          db.json
+        key: ${{ runner.os }}-public-${{ hashFiles('db.json') }}
         restore-keys: |
           ${{ runner.os }}-public-
           
-    # display public
-    - name: diplay public
-      run: ls public -R
-    
     # Hexo generate
     - name: Hexo generate
       id: generate
