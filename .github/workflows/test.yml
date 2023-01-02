@@ -1,0 +1,74 @@
+on:
+  push:
+    branches:
+      - test
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: A job to deploy blog.
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        submodules: true # Checkout private submodules(themes or something else).
+    
+    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+    - name: Cache node modules
+      uses: actions/cache@v3
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: npm ci
+
+    # download public
+    - name: download public
+      id: download
+      uses: actions/download-artifact@v3
+      with:
+        name: public
+        path: public
+    
+    - name: Display structure of downloaded files
+      run: ls -R
+      
+    # Hexo generate
+    - name: Hexo generate
+      id: generate
+      run: |
+        npx hexo generate
+        
+    # upload public
+    - name: upload public
+      id: upload
+      uses: actions/upload-artifact@v3
+      with:
+        name: public
+        path: public
+
+    # Deploy hexo blog website.
+    - name: Deploy
+      id: deploy
+      uses: TencentCloud/cos-action@v1
+      with:
+        secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
+        secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+        cos_bucket: ${{ secrets.COS_TESTBUCKET }}
+        cos_region: ${{ secrets.COS_REGION }}
+        local_path: public
+        remote_path: /
+        # Optional Set to true for cleaning files on COS path which are not existed in local path. Default is false.
+        # clean: true
+        # Optional Set to true for using accelerate domain to upload files. Default is false.
+        # accelerate: true
+
+    
+    # Use the output from the `deploy` step(use for test action)
+    - name: Get the output
+      run: |
+        echo "${{ steps.deploy.outputs.notify }}"
