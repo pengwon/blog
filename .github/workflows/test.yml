@@ -27,12 +27,12 @@ jobs:
       run: npm ci
 
     # download public
-#     - name: download public
-#       id: download
-#       uses: actions/download-artifact@v3
-#       with:
-#         name: public
-#         path: public
+    - name: download public
+      id: download
+      uses: actions/download-artifact@v3
+      with:
+        name: public
+        path: public
     
     - name: Display structure
       run: ls -R
