@@ -34,7 +34,7 @@ jobs:
         path: |
           public
           db.json
-        key: ${{ runner.os }}-public-${{ hashFiles('db.json') }}
+        key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
         restore-keys: |
           ${{ runner.os }}-public-
           
