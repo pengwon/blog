@@ -29,17 +29,17 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
 
-    # cache public
-    # - name: cache public
-    #   id: cache-public
-    #   uses: actions/cache@v3
-    #   with:
-    #     path: |
-    #       public
-    #       db.json
-    #     key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
-    #     restore-keys: |
-    #       ${{ runner.os }}-public-
+    # caching public
+    - name: cache public
+      id: cache-public
+      uses: actions/cache@v3
+      with:
+        path: |
+          public
+          db.json
+        key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
+        restore-keys: |
+          ${{ runner.os }}-public-
           
     # Hexo generate
     - name: Hexo generate
@@ -63,8 +63,7 @@ jobs:
       with:
         secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
         secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
-        # cos_bucket: ${{ secrets.COS_TESTBUCKET }}
-        cos_bucket: ${{ secrets.COS_BUCKET }}
+        cos_bucket: ${{ secrets.COS_TESTBUCKET }}
         cos_region: ${{ secrets.COS_REGION }}
         local_path: public
         remote_path: /
