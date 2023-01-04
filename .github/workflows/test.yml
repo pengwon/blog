@@ -40,8 +40,8 @@ jobs:
         key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
         restore-keys: |
           ${{ runner.os }}-public-
-      outputs:
-        key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
+      run: |
+        echo "key= ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}"
     # list dir
     # - name: list dir
     #   run: ls -R
