@@ -45,7 +45,6 @@ jobs:
     - name: Hexo generate
       id: generate
       run: |
-        npx hexo clean
         npx hexo generate
         
     # upload public
