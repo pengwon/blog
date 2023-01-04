@@ -53,8 +53,8 @@ jobs:
 
     - name: Get the output
       run: |
-        echo "${{ steps.generate.outputs }}"
-        python -c "print(${{ steps.generate.outputs }})"
+        echo "${{ steps.generate.outputs[0] }}"
+        python -c "print(${{ steps.generate.outputs[1] }})"
 
     # upload public
     # - name: upload public
