@@ -576,11 +576,11 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active: giscus
+  active:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: true
+  lazyload: false
   # Modify texts or order for any naves, here are some examples.
   nav:
     #disqus:
@@ -677,7 +677,7 @@ giscus:
   # Place the comment box above or below the comments: top | bottom
   input_position: top
   # Load the comments lazily
-  loading: lazy
+  # loading: lazy
 
 
 # ---------------------------------------------------------------
