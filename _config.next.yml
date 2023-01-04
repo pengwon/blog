@@ -677,7 +677,7 @@ giscus:
   # Place the comment box above or below the comments: top | bottom
   input_position: top
   # Load the comments lazily
-  loading: lazy
+  # loading: lazy
 
 
 # ---------------------------------------------------------------
