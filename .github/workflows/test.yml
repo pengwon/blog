@@ -30,16 +30,16 @@ jobs:
       run: npm ci
 
     # cache public
-    - name: cache public
-      id: cache-public
-      uses: actions/cache@v3
-      with:
-        path: |
-          public
-          db.json
-        key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
-        restore-keys: |
-          ${{ runner.os }}-public-
+    # - name: cache public
+    #   id: cache-public
+    #   uses: actions/cache@v3
+    #   with:
+    #     path: |
+    #       public
+    #       db.json
+    #     key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-public-
           
     # Hexo generate
     - name: Hexo generate
