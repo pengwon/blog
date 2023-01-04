@@ -54,7 +54,7 @@ jobs:
     - name: Get the output
       run: |
         echo "${{ steps.generate.outputs }}"
-        python -c "print("hello world")"
+        python -c "print(${{ steps.generate.outputs }})"
 
     # upload public
     # - name: upload public
