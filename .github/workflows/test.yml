@@ -40,7 +40,8 @@ jobs:
         key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
         restore-keys: |
           ${{ runner.os }}-public-
-      
+      outputs:
+        key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
     # list dir
     # - name: list dir
     #   run: ls -R
@@ -53,10 +54,8 @@ jobs:
 
     - name: Get the output
       run: |
-        echo "${{ steps.cache-public.outputs[0] }}"
-        echo "${{ steps.cache-public.outputs[1] }}"
-        echo "${{ steps.cache-public.outputs[2] }}"
-        python -c "print(${{ steps.generate.outputs[1] }})"
+        echo "${{ steps.cache-public.outputs.key }}"
+        python -c "print(${{ steps.generate.outputs.key }})"
 
     # upload public
     # - name: upload public
