@@ -53,7 +53,9 @@ jobs:
 
     - name: Get the output
       run: |
-        echo "${{ steps.generate.outputs[0] }}"
+        echo "${{ steps.cache-public.outputs[0] }}"
+        echo "${{ steps.cache-public.outputs[1] }}"
+        echo "${{ steps.cache-public.outputs[2] }}"
         python -c "print(${{ steps.generate.outputs[1] }})"
 
     # upload public
