@@ -42,15 +42,20 @@ jobs:
           ${{ runner.os }}-public-
       
     # list dir
-    - name: list dir
-      run: ls -R
+    # - name: list dir
+    #   run: ls -R
           
     # Hexo generate
     - name: Hexo generate
       id: generate
       run: |
         npx hexo generate
-        
+
+    - name: Get the output
+      run: |
+        echo "${{ steps.generate.outputs }}"
+        python -c "print("hello world")"
+
     # upload public
     # - name: upload public
     #   id: upload
