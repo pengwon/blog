@@ -1,3 +1,6 @@
+env:
+  TZ: Asia/Shanghai # 时区
+
 on:
   push:
     branches:
@@ -26,42 +29,51 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm ci
 
-    # download public
-#     - name: download public
-#       id: download
-#       uses: actions/download-artifact@v3
-#       with:
-#         name: public
-#         path: public
-    
-    - name: Display structure
-      run: ls -R
-      
+    # caching public
+    - name: cache public
+      id: cache-public
+      uses: actions/cache@v3
+      with:
+        path: |
+          public
+          db.json
+        key: ${{ runner.os }}-public-${{ hashFiles('**/db.json') }}
+        restore-keys: |
+          ${{ runner.os }}-public-
+
+    # list dir
+    # - name: list dir
+    #   run: ls -R
+          
     # Hexo generate
     - name: Hexo generate
       id: generate
       run: |
-        npx hexo generate
-        
+        npx hexo generate > tmp.txt
+
+    - name: Get the output
+      run: |
+        cat tmp.txt
+
     # upload public
-    - name: upload public
-      id: upload
-      uses: actions/upload-artifact@v3
-      with:
-        name: public
-        path: public
+    # - name: upload public
+    #   id: upload
+    #   uses: actions/upload-artifact@v3
+    #   with:
+    #     name: public
+    #     path: public
 
     # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      uses: TencentCloud/cos-action@v1
-      with:
-        secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
-        secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
-        cos_bucket: ${{ secrets.COS_TESTBUCKET }}
-        cos_region: ${{ secrets.COS_REGION }}
-        local_path: public
-        remote_path: /
+    # - name: Deploy
+    #   id: deploy
+    #   uses: TencentCloud/cos-action@v1
+    #   with:
+    #     secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
+    #     secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+    #     cos_bucket: ${{ secrets.COS_TESTBUCKET }}
+    #     cos_region: ${{ secrets.COS_REGION }}
+    #     local_path: public
+    #     remote_path: /
         # Optional Set to true for cleaning files on COS path which are not existed in local path. Default is false.
         # clean: true
         # Optional Set to true for using accelerate domain to upload files. Default is false.
