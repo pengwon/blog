@@ -10,7 +10,7 @@ tags:
 
 对于开发者来说，包管理工具是绕不开的话题，Ubuntu广受喜爱的原因之一也包含其方便的`apt`包管理工具，MacOS上有`homebrew`供开发者使用，这些包管理工具让开发环境的搭建非常顺滑。这里的包，是指广义的软件包，不仅包含常见的图形用户界面（GUI）软件，也包含命令行界面（CLI）软件和工具。
 
-而开发者苦Windows命令行甚至powershell久已，在早前的版本上，真的没有特别好用的工具。如今，终于也有了历经时间和用户考验的包管理器：Chocolatey，Scoop和Winget。Winget时间不久，由微软官方社区维护，但目前人气不如前两者。我只简单使用过chocolatey，没太多发言权，但scoop真的很好很强大，并且现在scoop的社区非常活跃，参与者众多，维护更新很快。我在GitHub上的第一次PR就提给了scoop。
+而开发者苦Windows命令行甚至powershell久矣，在早前的版本上，真的没有特别好用的工具。如今，终于也有了历经时间和用户考验的包管理器：Chocolatey，Scoop和Winget。Winget时间不久，由微软官方社区维护，但目前人气不如前两者。我只简单使用过chocolatey，没太多发言权，但scoop真的很好很强大，并且现在scoop的社区非常活跃，参与者众多，维护更新很快。我在GitHub上的第一次PR就提给了scoop。
 
 <!-- more -->
 
