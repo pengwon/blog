@@ -194,7 +194,7 @@ scoop中的程序用一个简单的json文件来维护，里边还可以嵌入po
 }
 ```
 
-scoop的工作流是非常非常依赖GitHub吧，国内访问偶尔抽风，如果大家在`irm get.scoop.sh | iex`这一步安装出问题，可以换成下面的命令试一下：
+scoop的工作流是非常非常依赖GitHub的，国内访问偶尔抽风，如果大家在`irm get.scoop.sh | iex`这一步安装出问题，可以换成下面的命令试一下：
 
 ``` powershell
 irm https://gitee.com/happy-peter/InstallScoop/raw/master/install.ps1 | iex
