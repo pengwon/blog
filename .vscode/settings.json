@@ -5,5 +5,8 @@
     "pasteImage.path": "${projectRoot}/source/images",
     "pasteImage.basePath": "${projectRoot}/source",
     "pasteImage.forceUnixStyleSeparator": true,
-    "pasteImage.prefix": "/"
+    "pasteImage.prefix": "/",
+    "Codegeex.DisabledFor": {
+        "markdown": true
+    }
 }
