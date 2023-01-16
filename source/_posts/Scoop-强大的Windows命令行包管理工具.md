@@ -44,7 +44,7 @@ scoop默认安装到用户目录，这样可以避免权限问题。如果需要
 - 自动查找并安装依赖项
 - 自动执行额外设置步骤以获得可用程序
 
-在之前的[Hexo安装和配置](https://blog.boringhex.top/posts/d30a586cac66/)中就曾讲过，从nodejs官网安装node.js各种坑，最后scoop一条命令搞定，那感觉真是太爽了。
+在之前的[Hexo安装和配置](https://blog.boringhex.top/posts/2327471638fc/)中就曾讲过，从nodejs官网安装node.js各种坑，最后scoop一条命令搞定，那感觉真是太爽了。
 
 ``` powershell
 PS C:\> scoop install nodejs                                                    
@@ -194,7 +194,7 @@ scoop中的程序用一个简单的json文件来维护，里边还可以嵌入po
 }
 ```
 
-scoop的工作流是非常非常依赖GitHub吧，国内访问偶尔抽风，如果大家在`irm get.scoop.sh | iex`这一步安装出问题，可以换成下面的命令试一下：
+scoop的工作流是非常非常依赖GitHub的，国内访问偶尔抽风，如果大家在`irm get.scoop.sh | iex`这一步安装出问题，可以换成下面的命令试一下：
 
 ``` powershell
 irm https://gitee.com/happy-peter/InstallScoop/raw/master/install.ps1 | iex
