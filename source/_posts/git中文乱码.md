@@ -20,6 +20,8 @@ Untracked files:
         "\344\270\255\346\226\207.txt"
 ```
 
+<!-- more -->
+
 可以通过以下命令解决：
 
 ``` powershell
