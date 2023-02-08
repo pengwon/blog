@@ -12,6 +12,8 @@ tags:
 
 提交Issues时一定要把自己遇到问题、现象、环境、配置等尽可能描述清楚，以便开发者复现和定位问题。关于提问可以参考之前[这篇文章](https://blog.boringhex.top/posts/bf7113d286b6/)。
 
+<!-- more -->
+
 本地node环境：
 
 ``` powershell
