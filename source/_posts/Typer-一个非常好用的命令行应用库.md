@@ -1,9 +1,9 @@
 ---
 title: 'Typer: 一个非常好用的命令行应用库'
 tags:
-  - 命令行/CLI/cmd
-  - 控制台/Console
-  - 终端/Terminal
+  - 命令行/cli/cmd
+  - 控制台/console
+  - 终端/terminal
   - python
   - powershell
 date: 2022-11-16 16:13:54

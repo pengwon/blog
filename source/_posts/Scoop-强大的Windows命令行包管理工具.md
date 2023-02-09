@@ -3,7 +3,7 @@ title: Scoop-强大的Windows命令行包管理工具
 date: 2023-01-04 14:48:24
 categories:
 tags:
-  - Windows
+  - windows
   - powershell
   - 包管理
 ---
