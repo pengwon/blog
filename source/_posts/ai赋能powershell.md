@@ -8,7 +8,7 @@ tags:
   - chatgpt
 ---
 
-最近chatgpt非常火爆，获得超高曝光度的同时，也让大家对ai和ai工具有了新的认识。关于chatgpt，可以参考这篇文章。
+最近chatgpt非常火爆，获得超高曝光度的同时，也让大家对ai和ai工具有了新的认识。关于chatgpt，可以参考[这篇文章](https://blog.boringhex.top/posts/301baee4a034/)。
 
 今天主要推荐一个可以与powershell集成的ai工具，其后端也是openai的服务，可以有效提高工作效率。
 
@@ -61,6 +61,26 @@ $env:OpenAIKey="你的OpenAI API密钥"
 ### 示例
 
 > `Get-GPT3Completion`可以使用别名`gpt`
+
+快速演示：
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1cv4y1473q&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+命令行中使用快捷键：
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1DD4y1N728&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+`ai`命令：
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1Bj411K7JN&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+结对编程：
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1Ne4y1P7RX&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+生成excel表格：
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV19T41197D5&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 1. 以`json`格式列出行星名
 
