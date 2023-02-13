@@ -9,7 +9,7 @@ tags:
 今天在安装powershell模块时遇到一个问题：
 
 ```powershell
-❯ Install-Module -Name PowerShellGet
+❯ Install-Module -Name PowerShellAI
 Install-Package: Unable to find module providers (PowerShellGet).
 ```
 
