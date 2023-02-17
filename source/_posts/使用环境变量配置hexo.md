@@ -10,12 +10,14 @@ tags:
 
 但还是想知道如何在hexo的层面上解决，所以在[hexo仓库](https://github.com/hexojs/hexo)提交了一个[issue](https://github.com/hexojs/hexo/issues/5154)。
 
-本来以为hexo目前还不支持，结果作者回复可以使用`config`命令来实现：
+本来以为hexo目前还不支持，后来作者回复可以在自动化流程中使用`config`命令来实现：
 
 ``` sh
 export THEME=next
 hexo config theme $THEME
 ```
+
+<!-- more -->
 
 我在hexo网站有搜了下文档，没有相关说明。但是这个命令可以使用：
 
