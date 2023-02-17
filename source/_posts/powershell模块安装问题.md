@@ -26,7 +26,7 @@ C:\Users\pengwon\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Module
 
 ![](https://imgs.boringhex.top/blog/20230209180543.png)
 
-解决就比较简单了，把“C:\Program Files\PowerShell\7\Modules“加到`PSModulePath`环境变量中就可以了：
+解决就比较简单了，把"C:\Program Files\PowerShell\7\Modules"加到`PSModulePath`环境变量中就可以了：
 
 ```powershell
 $env:PSModulePath += ";C:\Program Files\PowerShell\7\Modules"
