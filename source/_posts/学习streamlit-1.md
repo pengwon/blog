@@ -151,8 +151,9 @@ Executing transaction: done
 
 ``` powershell
 ❯ conda activate streamlit-env
-(streamlit-env)
 
+(streamlit-env)
+~ via 🐍 v3.9.16 via 🅒 streamlit-env
 ❯ pip install streamlit
 Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
 Collecting streamlit
@@ -295,6 +296,8 @@ streamlit的依赖项还是挺多的，这个环境几乎涵盖了用python做�
 接下来，一行代码把streamlit运行起来：
 
 ``` powershell
+(streamlit-env)
+~ via 🐍 v3.9.16 via 🅒 streamlit-env
 ❯ streamlit hello
 
   Welcome to Streamlit. Check out our demo in your browser.
