@@ -61,7 +61,7 @@ streamlit建立在三个简单原则之上：
 
 windows上建议使用[anaconda](https://www.anaconda.com/)管理python开发环境，如果嫌弃anaconda过于庞大，可以安装[miniconda](https://docs.conda.io/en/latest/miniconda.html)。
 
-将`congda`命令集成到windows terminal，可以参考[这篇文章](https://blog.boringhex.top/posts/fe1b4febbd53/)。
+将`conda`命令集成到windows terminal，可以参考[这篇文章](https://blog.boringhex.top/posts/fe1b4febbd53/)。
 
 安装anaconda或miniconda后，建立一个streamlit的开发环境：
 
