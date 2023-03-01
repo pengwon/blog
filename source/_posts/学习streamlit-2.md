@@ -7,6 +7,12 @@ tags:
   - streamlit
 ---
 
+首先视频快速预览下今天的学习内容：
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1W24y1n7xC&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<!-- more -->
+
 今天继续学习streamlit，首先激活之前建立的虚拟环境：
 
 ``` powershell
@@ -15,7 +21,6 @@ tags:
 ~ via 🐍 v3.9.16 via 🅒 streamlit-env
 ❯ 
 ```
-<!-- more -->
 
 进入到虚拟环境目录下，新建`exercises`文件夹，新建`day1.py`文件：
 

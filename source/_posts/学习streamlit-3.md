@@ -208,3 +208,7 @@ fig  # 👈 Draw a Matplotlib chart
 运行后效果：
 
 ![](https://imgs.boringhex.top/blog/20230224115106.png)
+
+视频教程：
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1sT411Y7pT&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
