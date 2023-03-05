@@ -11,7 +11,7 @@ tags:
 
 ## [`st.multiselect`](https://docs.streamlit.io/library/api-reference/widgets/st.multiselect)
 
-与selectbox的用法非常相似，只是选项变成了多选。接下来，我们看以下demo程序：
+与selectbox的用法非常相似，只是选项变成了多选。接下来，我们看一下demo程序：
 
 <iframe loading="lazy" src="https://share.streamlit.io/dataprofessor/st.multiselect/?embed=true" height="400" width="100%"></iframe>
 
