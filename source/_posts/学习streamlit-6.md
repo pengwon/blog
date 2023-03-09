@@ -65,7 +65,7 @@ st.write('Your favorite color is ', option)
 
 ### 练习
 
-创建一个程序，让用户选择练习方式。
+创建一个程序，让用户选择联系方式。
 
 效果：
 
