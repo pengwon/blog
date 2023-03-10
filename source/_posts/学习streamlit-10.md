@@ -17,6 +17,8 @@ tags:
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/dataprofessor/st.file_uploader/)
 
+<!-- more -->
+
 运行效果：
 
 <iframe src="//player.bilibili.com/player.html?bvid=BV1ZL41117Y4&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
