@@ -11,6 +11,8 @@ tags:
 
 ![hollow clock 4](https://imgs.boringhex.top/blog/F77HI74LB537UH8.jpg "hollow clock 4")
 
+<!-- more -->
+
 有两个演示视频：
 
 <iframe src="//player.bilibili.com/player.html?bvid=BV1Jm4y1r78w&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
