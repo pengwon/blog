@@ -78,7 +78,7 @@ jobs:
         # Optional Set to true for using accelerate domain to upload files. Default is false.
         # accelerate: true
       run: |
-        pip install coscmd -U
+        pip install -r requirements.txt
         coscmd config -a ${secret_id} -s ${secret_key} -b ${cos_bucket} -r ${cos_region}
         coscmd upload -rsf ${local_path} ${remote_path}
 
