@@ -55,11 +55,18 @@ jobs:
       run: |
         npx hexo generate
 
+    # Setup python
+    - name: Setup python
+      id: py39
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        cache: 'pip'
+      
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
-      uses: TencentCloud/cos-action@v1
-      with:
+      env:
         secret_id: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
         secret_key: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
         cos_bucket: ${{ secrets.COS_BUCKET }}
@@ -70,6 +77,10 @@ jobs:
         # clean: true
         # Optional Set to true for using accelerate domain to upload files. Default is false.
         # accelerate: true
+      run: |
+        pip install coscmd -U
+        coscmd config -a ${secret_id} -s ${secret_key} -b ${cos_bucket} -r ${cos_region}
+        coscmd upload -rsf ${local_path} ${remote_path}
 
     
     # Use the output from the `deploy` step(use for test action)
