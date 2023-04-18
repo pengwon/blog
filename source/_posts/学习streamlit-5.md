@@ -132,11 +132,11 @@ Streamlit 主题从 Streamlit 1.16.0 开始可以通过关键字参数获得。�
 
 默认streamlit主题：
 
-![](https://imgs.boringhex.top/blog/1.png)
+![streamlit默认主题图表](https://imgs.boringhex.top/blog/202304182255903.png)
 
 原生altair主题：
 
-![](https://imgs.boringhex.top/blog/2.png)
+![altair主题图表](https://imgs.boringhex.top/blog/202304182257583.png)
 
 [了解更多](https://altair-viz.github.io/gallery/)Altair图表示例。
 
