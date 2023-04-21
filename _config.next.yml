@@ -523,12 +523,12 @@ math:
   mathjax:
     enable: true
     # Available values: none | ams | all
-    tags: none
+    tags: all
 
   katex:
     enable: false
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
-    copy_tex: false
+    copy_tex: true
 
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax
