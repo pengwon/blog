@@ -22,6 +22,7 @@
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
     "hexo-next-giscus": "https://github.com/next-theme/hexo-next-giscus.git",
+    "hexo-reference": "^1.0.4",
     "hexo-related-posts": "^1.5.1",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^6.0.0",
