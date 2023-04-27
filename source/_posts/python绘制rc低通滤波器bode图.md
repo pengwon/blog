@@ -71,7 +71,7 @@ ax1.axvline(fc, color='r', linestyle='--')
 ax1.text(fc, -40, '{:.2f} Hz'.format(fc), ha='center', va='top')
 
 # 在第二个子图中，使用 ax2.semilogx() 绘制相频响应曲线。ax2.set_title()、ax2.set_xlabel() 和 ax2.set_ylabel() 用于设置子图的标题和轴标签。ax2.axvline() 用于绘制红色虚线，表示截止频率 fc 所在的位置。ax2.text() 用于在截止频率处添加文本标注。
-ax2.semilogx(w(2 * np.pi), phase)
+ax2.semilogx(w/(2 * np.pi), phase)
 ax2.set_title('Bode Plot - Phase')
 ax2.set_xlabel('Frequency (Hz)')
 ax2.set_ylabel('Phase (deg)')
