@@ -10,6 +10,8 @@ tags:
 
 CMake是一个跨平台的构建系统，它可以根据简单的配置文件生成各种平台的构建工具（例如Makefile、Visual Studio项目文件等）。CMake使用CMakeLists.txt文件来描述项目的构建规则和依赖关系。在这个文件中，可以设置各种编译选项。
 
+<!-- more -->
+
 1. 设置C++标准：
 
    ```cmake
@@ -31,9 +33,7 @@ CMake是一个跨平台的构建系统，它可以根据简单的配置文件生
 
    这个示例为不同的编译器设置了不同的编译选项。对于Microsoft Visual Studio编译器，它将警告级别设置为/W4并将所有警告视为错误。对于其他编译器（如GCC、Clang），它将启用所有警告、额外警告，并将警告视为错误。
 
-<!-- more -->
-
-1. 添加定义：
+3. 添加定义：
 
    ```cmake
    add_definitions(-DENABLE_DEBUG)
@@ -41,7 +41,7 @@ CMake是一个跨平台的构建系统，它可以根据简单的配置文件生
 
    这将为项目添加一个宏定义`ENABLE_DEBUG`。在C++代码中，可以使用`#ifdef ENABLE_DEBUG`检查宏是否定义。
 
-2. 设置优化选项：
+4. 设置优化选项：
 
    ```cmake
    set(CMAKE_BUILD_TYPE Release)
@@ -49,7 +49,7 @@ CMake是一个跨平台的构建系统，它可以根据简单的配置文件生
 
    这将设置构建类型为"Release"，通常表示编译器会启用优化选项。CMake支持多种构建类型，如Debug、Release、RelWithDebInfo和MinSizeRel。
 
-3. 设置项目输出目录：
+5. 设置项目输出目录：
 
    ```cmake
    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -59,7 +59,7 @@ CMake是一个跨平台的构建系统，它可以根据简单的配置文件生
 
    这将设置项目的可执行文件、库文件和静态库文件的输出目录。
 
-4. 设置依赖库：
+6. 设置依赖库：
 
    ```cmake
    find_package(Threads REQUIRED)
