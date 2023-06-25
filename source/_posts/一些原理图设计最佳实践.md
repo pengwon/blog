@@ -5,7 +5,7 @@ categories:
 tags:
     - 硬件
     - ecad/eda
-    - altium designer
+    - ad/altium designer
     - 技巧
 ---
 

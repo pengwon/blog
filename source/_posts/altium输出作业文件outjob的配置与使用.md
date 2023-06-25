@@ -3,7 +3,7 @@ title: altium输出作业文件outjob的配置与使用
 date: 2023-05-17 11:54:09
 categories:
 tags:
-    - altium
+    - ad/altium designer
     - ecad/eda
 ---
 

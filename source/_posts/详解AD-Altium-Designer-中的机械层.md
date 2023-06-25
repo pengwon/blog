@@ -4,7 +4,7 @@ date: 2023-02-06 15:59:37
 categories:
 tags:
   - ecad/eda
-  - altium
+  - ad/altium designer
   - 硬件
 ---
 
