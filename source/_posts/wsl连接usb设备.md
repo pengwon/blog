@@ -3,6 +3,10 @@ title: wsl连接usb设备
 date: 2023-07-04 10:08:13
 categories:
 tags:
+    - esp32
+    - stm32
+    - 嵌入式
+    - 工具
 ---
 
 前两天调试在Windows上的docker容器中连接usb设备，发现在Windows上可以找到设备，但是在容器中找不到设备，怀疑是系统usb设备资源没有挂载到容器中。经搜索，确定wsl并不直接支持USB设备的连接，这就意味着我们必须寻找一个解决方案，而usbipd-win就是提供这个解决方案的工具。它支持在Windows计算机上设置USB/IP项目，以支持一些常见的开发场景，比如刷写Arduino或访问智能卡读取器等。

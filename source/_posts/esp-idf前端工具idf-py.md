@@ -3,7 +3,11 @@ title: esp-idf前端工具idf.py
 date: 2023-07-04 10:12:37
 categories:
 tags:
+    - esp32
+    - 嵌入式
+    - 工具
 ---
+
 在之前的文章 [ESP32 VS Code 开发环境"hello world"](https://mp.weixin.qq.com/s?__biz=MzA3NzMyNTIyOA==&mid=2651481620&idx=1&sn=6d148cc74ea5bf67b54f4d4a959eb1ed&chksm=84ad70d7b3daf9c14c37c992a1ea1e0c545af42524c3f856def65d48e1b00fca82948703e4db#rd) 中，我们在vs code中完成了esp32 "hello world"程序的开发。乐鑫将很多操作集成到了vs code插件中，在gui中以按钮的形式与用户进行交互。而在这些按钮的背后，则是`idf.py`。
 
 ## `idf.py`
