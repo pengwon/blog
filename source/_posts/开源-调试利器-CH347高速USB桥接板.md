@@ -16,6 +16,8 @@ tags:
 
 ![BOTTOM](https://github.com/pengwon/ch347-hs-usb-bridge/blob/main/img/SMT2306162343_B.png?raw=true)
 
+[GitHub仓库](https://github.com/pengwon/ch347-hs-usb-bridge)
+
 <!-- more -->
 
 ## 特性
