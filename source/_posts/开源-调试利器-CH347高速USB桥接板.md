@@ -12,13 +12,15 @@ tags:
 
 [CH347 USB High Speed Bridge](https://github.com/pengwon/ch347-hs-usb-bridge) 是基于沁恒[CH347](https://www.wch.cn/products/CH347.html)芯片设计的一款调试利器，支持高速USB，可以实现USB to UART，USB to SPI，USB to I2C，USB JTAG，USB to GPIO。
 
+[GitHub仓库](https://github.com/pengwon/ch347-hs-usb-bridge)
+
+<!-- more -->
+
 ![TOP](https://github.com/pengwon/ch347-hs-usb-bridge/blob/main/img/SMT2306162343_T.png?raw=true)
 
 ![BOTTOM](https://github.com/pengwon/ch347-hs-usb-bridge/blob/main/img/SMT2306162343_B.png?raw=true)
 
-[GitHub仓库](https://github.com/pengwon/ch347-hs-usb-bridge)
-
-<!-- more -->
+![实物图](https://github.com/pengwon/ch347-hs-usb-bridge/blob/main/img/实物图.jpg?raw=true)
 
 ## 特性
 
@@ -85,6 +87,8 @@ K1、K2按下输出低电平，松开输出高电平。下表'0'表示按下，'
 上电默认为模式0；按住K1再按RST复位，切换到模式1；按住K2再按RST复位，切换到模式2；同时按住K1、K2再按RST复位，切换到模式3。
 
 ## PINOUT
+
+![PINOUT](https://github.com/pengwon/ch347-hs-usb-bridge/blob/main/img/PINOUT.jpg?raw=true)
 
 ## 目录结构
 
