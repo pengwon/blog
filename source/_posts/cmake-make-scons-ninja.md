@@ -3,6 +3,8 @@ title: cmake?make?scons?ninja?
 date: 2023-06-25 12:21:19
 categories:
 tags:
+    - cmake
+    - ci/cd
 ---
 
 CMake、Make和SCons都是流行的C语言构建系统，它们用于自动化项目构建过程。这些构建系统的主要目标是简化编译和链接源代码以创建可执行文件的过程。Ninja则是后起之秀，最初设计用于构建Chrome浏览器这个大型代码库，以其简单快速著称。
