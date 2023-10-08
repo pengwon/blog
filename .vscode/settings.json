@@ -17,5 +17,6 @@
 	"spellright.documentTypes": [
 		"latex",
 		"plaintext"
-	]
+	],
+	"workbench.editor.empty.hint": "hidden"
 }
