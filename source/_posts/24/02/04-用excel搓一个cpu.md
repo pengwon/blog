@@ -7,7 +7,6 @@ tags:
     - 算法
 ---
 
-# 用Excel搓一个16位CPU
 
 以前的一篇[文章](https://mp.weixin.qq.com/s?__biz=MzA3NzMyNTIyOA==&mid=2651481772&idx=2&sn=13eb63165816082484cc1a0fd03dce73&chksm=84ad706fb3daf9799b692a5c8fa249e2c150732f4cfbfbfcbcad7c2442380f2b78c6823e27ee#rd) 介绍了一个大佬用差不多600行C语言代码实现了RISC-V CPU核，今天又看到GitHub上有牛人用Excel搓了一个16位CPU。
 

@@ -7,7 +7,6 @@ tags:
     - ai
 ---
 
-# GitHub Copilot插件登录流程
 
 GitHub OAuth应用有一套流程，用于获取用户的授权信息。这个流程是一个OAuth2的流程，主要分为以下几个步骤：
 

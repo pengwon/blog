@@ -7,7 +7,6 @@ tags:
     - postgresql
 ---
 
-# windows安装postgresql遇到的坑
 
 最近在尝试做元器件信息系统，需要用到数据库，之前学习python时一直被安利postgresql，所以就打算用postgresql。其实对初级用户来说，mysql、postgresql都差不多，用不到什么高级功能，完全个人偏好。
 

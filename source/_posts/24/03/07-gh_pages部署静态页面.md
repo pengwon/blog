@@ -6,7 +6,6 @@ tags:
     - github
 ---
 
-# GitHub Pages部署静态页面
 
 GitHub Pages是GitHub提供的静态页面托管服务，可以用来托管个人博客、项目文档等静态页面。GitHub Pages支持Jekyll，可以使用Jekyll构建博客，也可以使用其他静态页面生成器。现在GitHub Pages也在公测通过工作流部署静态页面，可以通过GitHub Actions自动部署静态页面，这样页面构建工具就不再受约束，可以使用任何静态页面生成器。GitHub Pages还支持自定义域名，可以绑定自己的域名。我的[个人博客](https://blog.boringhex.top/)目前是托管在腾讯云COS上，使用GitHub Actions自动部署，主要考虑是加快国内访问速度，现在都是在公众号上发布文章了，后期考虑把博客迁到GitHub Pages上。
 

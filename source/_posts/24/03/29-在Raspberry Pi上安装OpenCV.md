@@ -7,7 +7,6 @@ tags:
     - 算法
 ---
 
-# 在Raspberry Pi上安装OpenCV
 
 这是一个快速指南，展示了如何在 Raspberry Pi 板上安装 OpenCV（开放计算机视觉库）软件。我们在 Raspberry Pi OS 64 位上测试了此安装。OpenCV 是一个用于计算机视觉和机器学习的开源库，带有用于图像处理、视频分析和机器学习应用程序的工具和算法。
 
