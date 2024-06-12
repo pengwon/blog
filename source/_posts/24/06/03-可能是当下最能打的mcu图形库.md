@@ -10,6 +10,8 @@ tags:
 
 ![智能手表DEMO](https://github.com/kisvegabor/test/raw/master/smartwatch_demo.gif)
 
+<!-- more -->
+
 ![仪表盘DEMO](https://camo.githubusercontent.com/7593164c6b55d597309d3397f9cda8072847195a24fd7abc33bf5746ee7c0661/68747470733a2f2f6c76676c2e696f2f6173736574732f696d616765732f6c76676c5f776964676574735f64656d6f2e676966)
 
 ## 概述
