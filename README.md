@@ -1,3 +1,3 @@
 # [boringhex blog](https://blog.boringhex.top)
 
-[![.github/workflows/cos-deploy.yml](https://github.com/boringhex-top/blog.boringhex.top/actions/workflows/cos-deploy.yml/badge.svg)](https://github.com/boringhex-top/blog.boringhex.top/actions/workflows/cos-deploy.yml)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white)
